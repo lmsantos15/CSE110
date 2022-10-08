@@ -17,39 +17,38 @@
 # print()
 # # FORMULA v(t) = sqrt(mg/c) * (1 - exp((-sqrt(mgc)/m)t))
 
-# print("Welcome to the velocity calculator. Please enter the following: \n")
+print("Welcome to the velocity calculator. Please enter the following: \n")
 
-# import math
-# from pickle import FROZENSET
+import math
 
-# # Mass
-# mass = float(input("Mass (in kg): "))
+# Mass
+mass = float(input("Mass (in kg): "))
 
-# # Gravity
-# gravity = float(input("Gravity (in m/s^2, 9.8 for Earth, 24 for Jupiter): "))
+# Gravity
+gravity = float(input("Gravity (in m/s^2, 9.8 for Earth, 24 for Jupiter): "))
 
-# # Time
-# time = float(input("Time (in seconds): "))
+# Time
+time = float(input("Time (in seconds): "))
 
-# # P = Fluid
-# fluid = float(input("Density of the fluid (in kg/m^3, 1.3 for air, 1000 for water): "))
+# P = Fluid
+fluid = float(input("Density of the fluid (in kg/m^3, 1.3 for air, 1000 for water): "))
 
-# # Area
-# area = float(input("Cross sectional area (in m^2): "))
+# Area
+area = float(input("Cross sectional area (in m^2): "))
 
-# # C
-# constant = float(input("Drag constant (0.5 for sphere, 1.1 for cylinder): "))
+# C
+constant = float(input("Drag constant (0.5 for sphere, 1.1 for cylinder): "))
 
-# # c = 1/2 p A C
-# inner_value = (1/2) * fluid * area * constant
-# print(f"The inner value of c is: {inner_value:.3f}")
+# c = 1/2 p A C
+inner_value = (1/2) * fluid * area * constant
+print(f"The inner value of c is: {inner_value:.3f}")
 
-# # Velocity
+# Velocity
 # # v(t) = sqrt(mg/c) * (1 - exp((-sqrt(mgc)/m)t))
-# velocity_time = math.sqrt((mass * gravity) / inner_value) * (1 - math.exp((-math.sqrt(mass * gravity * inner_value) / mass) * time))
+velocity_time = math.sqrt((mass * gravity) / inner_value) * (1 - math.exp((-math.sqrt(mass * gravity * inner_value) / mass) * time))
 
-# # Total calculation
-# print(f"The velocity after {time} seconds is: {velocity_time:.3f} m/s \n")
+# Total calculation
+print(f"The velocity after {time} seconds is: {velocity_time:.3f} m/s \n")
 
 import math
 
@@ -73,3 +72,4 @@ formula = math.sqrt(gravity_pull / 2 * time2)
 
 print(f"Bullet drop is: {formula:.3f} meters. \n")
 
+# Not really good with math. I hope I made justice with my formula :)
