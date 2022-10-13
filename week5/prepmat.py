@@ -42,9 +42,9 @@ print()
 country1 = input("What country do you live in? ")
 province1 = input("What province/state do you live in? ")
 
-if country1.lower() == "Philippines":
-    if province1.lower() in('Manila' ,\
-         'Quezon' , 'Piñas'):
+if country1.lower() == "philippines":
+    if province1.lower() in('manila' ,\
+         'quezon' , 'piñas'):
         tax1 = 0.012
     else:
         tax1 = 0.10
