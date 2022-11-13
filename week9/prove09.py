@@ -1,10 +1,18 @@
 # 09 Prove: Assignment Milestone
 
+# Project Description"
+"For this project you will create a program that stores a list of products in a shopping cart along with their prices. The user should have the ability to add items to the list, remove them, and see the total price of the cart."
+
 print()
 
 print("Welcome to the Shopping Cart Program!")
 
 # Milestone Requirements 1, 2, 5
+
+# I. ADD A NEW ITEM
+# II. DISPLAY THE CONTENTS OF THE SHOPPING CART
+# V. QUIT
+
 list_of_items = []
 list_of_items_price = []
 
