@@ -1,0 +1,5 @@
+March 18,95.5
+May 03,55.5
+December 15,564.23
+January 27,545.4
+December 28,540.1
