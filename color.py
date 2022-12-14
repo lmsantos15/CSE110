@@ -1,4 +1,3 @@
-name = input('Enter your name: ')
-color = input('What is your favorite color?')
+def calculate_next_age(age):
 
-print('Wonderful!')
+    return age + 1

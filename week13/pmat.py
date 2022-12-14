@@ -42,14 +42,26 @@ from datetime import datetime
 # print("Your initials are: " + first_name_initial + last_name_initial)
 
 "I can still use a function, but this time my function returns a value"
+# def get_initial(name):
+#     initial = name[0:1] # .upper() to capitalize the initials
+#     return initial
+
+# first_name = input("Enter your first name: ")
+# first_name_initial = get_initial(first_name)
+
+# last_name = input("Enter your last name: ")
+# last_name_initial = get_initial(last_name)
+
+# print("Your initials are: " + first_name_initial + last_name_initial)
+
+
+"Functions that return values allow clever code, but you might trade readability for less code"
+
 def get_initial(name):
-    initial = name[0:1]
+    initial = name[0:1].upper()
     return initial
 
 first_name = input("Enter your first name: ")
-first_name_initial = get_initial(first_name)
+last_name = input("enter your last name: ")
 
-last_name = input("Enter your last name: ")
-last_name_initial = get_initial(last_name)
-
-print("Your initials are: " + first_name_initial + last_name_initial)
+print("Your initials are: " + get_initial(first_name) + get_initial(last_name))
